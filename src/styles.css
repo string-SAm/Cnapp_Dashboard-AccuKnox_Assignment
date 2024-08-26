@@ -1,0 +1,155 @@
+/* src/styles.css */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: scroll;
+}
+
+.widget {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Set a fixed height for the widget */
+  width: 300px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+.side-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.widgetContainer {
+  display: flex;
+  gap: 12px;
+}
+
+/* Overall container for the form */
+.add-widget-form-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.add-widget-navbar {
+  background-color: #1a237e;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.add-widget-navbar .close-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Tabs container */
+.add-widget-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-widget-tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 3px solid transparent;
+}
+
+.add-widget-tab.active {
+  border-bottom: 3px solid #1a237e;
+  font-weight: bold;
+}
+
+/* Form content area */
+.add-widget-content {
+  padding: 20px;
+}
+
+.add-widget-content input[type="text"],
+.add-widget-content input[type="number"],
+.add-widget-content input[type="color"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styles */
+.add-widget-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  /* margin-top: 700px; */
+}
+
+.add-widget-footer button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-widget-footer .cancel-button {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+.add-widget-footer .confirm-button {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+.add-widget-footer button:hover {
+  opacity: 0.9;
+}
