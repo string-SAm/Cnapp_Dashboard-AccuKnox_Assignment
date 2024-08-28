@@ -66,6 +66,8 @@ const AddWidgetForm = ({ addWidget, onClose }) => {
           </div>
         ))}
       </div>
+
+      {/* Form for Widget details */}
       <div className="add-widget-content">
         <form onSubmit={handleSubmit}>
           <input
@@ -133,15 +135,15 @@ const AddWidgetForm = ({ addWidget, onClose }) => {
           )}
 
           {/* Footer Buttons */}
+          <div className="add-widget-footer">
+            <button className="cancel-button" type="button" onClick={onClose}>
+              Cancel
+            </button>
+            <button className="confirm-button" type="submit">
+              Confirm
+            </button>
+          </div>
         </form>
-      </div>
-      <div className="add-widget-footer">
-        <button className="cancel-button" type="button" onClick={onClose}>
-          Cancel
-        </button>
-        <button className="confirm-button" type="submit">
-          Confirm
-        </button>
       </div>
     </div>
   );
